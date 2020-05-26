@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  acme-app:
+    image: ruby
+    hostname: acme-app
+    container_name: acme-app
+    dns: 8.8.8.8
+    environment:
+      TEAM_ID: 'XXXXXXXXX'
+      CLIENT_ID: 'au.com.domain.service-id'
+      KEY_ID: 'XXXXXXXXX'
+    volumes:
+      - ./data:/root/data
+    tty: true
+    command: sh /root/data/generate.sh    

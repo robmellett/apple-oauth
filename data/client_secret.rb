@@ -1,9 +1,9 @@
 require 'jwt'
 
 key_file = '/root/data/key.txt'
-team_id = "${TEAM_ID}"
-client_id = "${CLIENT_ID}"
-key_id = "${KEY_ID}"
+team_id = "XXXXXXXXX"
+client_id = "au.com.domain.service-id"
+key_id = "XXXXXXXXX"
 
 ecdsa_key = OpenSSL::PKey::EC.new IO.read key_file
 

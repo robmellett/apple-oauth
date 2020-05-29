@@ -4,7 +4,7 @@ A handy docker container to help generate the Apple OAuth Secrets
 
 1. Add your secrect key to `./data/key.txt`.
 
-2. Edit The following variables in your `docker-compose.yml`.
+2. Edit The following variables in your `./data/client_secret.rb`.
 
 ```
 TEAM_ID: 'XXXXXXXXX'
